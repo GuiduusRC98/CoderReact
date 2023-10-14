@@ -12,6 +12,7 @@ function Navbar() {
         <ul>
             <li><button>Camisetas</button></li>
             <li><button>Shorts</button></li>
+            <li><button>Medias</button></li>
             <li><button>Botines</button></li>
             <li><button>Accesorio</button></li>
             <li><CartWidget/></li>
