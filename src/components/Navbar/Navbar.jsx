@@ -4,16 +4,16 @@ import CartWidget from '../CartWidget/CartWidget';
 function Navbar() {
   return (
     <header>
-      <a href="#" class="logo"
+      <button class="logo"
         ><img src="http://cadep.ar/img/cadep_logo.png" alt="" width="85px" height="100px"
-      /></a>
-      <a href="#" class="logo">CADEP - TIENDA OFICIAL<span>.</span></a>
+      /></button>
+      <h1 class="logo">CADEP - TIENDA OFICIAL</h1>
       <nav class="navbar">
         <ul>
-            <li><a href="#">Camisetas</a></li>
-            <li><a href="#">Shorts</a></li>
-            <li><a href="#">Botines</a></li>
-            <li><a href="#">Accesorio</a></li>
+            <li><button>Camisetas</button></li>
+            <li><button>Shorts</button></li>
+            <li><button>Botines</button></li>
+            <li><button>Accesorio</button></li>
             <li><CartWidget/></li>
         </ul>
       </nav>

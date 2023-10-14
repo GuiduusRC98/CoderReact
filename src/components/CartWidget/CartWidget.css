@@ -1,0 +1,29 @@
+.cart-count {
+  position: absolute;
+  top: 20px;
+  right: 115px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cart-widget {
+  display: flex;
+  color: #483c2e;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cart-widget i:hover {
+  color: #ffff;
+}
+

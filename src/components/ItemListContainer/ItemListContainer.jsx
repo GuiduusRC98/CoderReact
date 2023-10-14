@@ -1,8 +1,8 @@
 import './ItemListContainer.css';
 
-const ItemListContainer = () => (
+const ItemListContainer = ({gretting}) => (
     <div className="item-list-container">
-      <h2>TIENDA CADEP</h2>
+      <h2>{gretting}</h2>
     </div>
   );
   

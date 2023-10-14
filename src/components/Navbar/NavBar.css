@@ -30,6 +30,7 @@ header .logo {
   font-size: 2rem;
   color: #fff;
   font-weight: bolder;
+  background-color: transparent;
 }
 
 .navbar ul {
@@ -37,13 +38,16 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-header .navbar ul li a {
+
+header .navbar ul li button {
   font-size: 2rem;
   padding: 0 1.5rem;
   color: #483c2e;
   text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-header .navbar ul li a:hover {
+header .navbar ul li button:hover {
   color: #ffff;
 }

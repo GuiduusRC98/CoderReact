@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -9,7 +8,7 @@ function App() {
     <div>
       <Navbar />
       <div></div>
-      <ItemListContainer />
+      <ItemListContainer gretting="TIENDA CADEP"/>
       </div>
     
     
