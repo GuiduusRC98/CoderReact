@@ -5,7 +5,7 @@ import './CartWidget.css';
 const CartWidget = () => (
   <button className="cart-widget">
     <FontAwesomeIcon icon={faShoppingCart} />
-    <span class="cart-count">3</span>
+    <span className="cart-count">3</span>
   </button>
 
 );

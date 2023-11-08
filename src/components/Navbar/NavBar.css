@@ -16,7 +16,7 @@ html {
   scroll-padding-top: 6rem;
 }
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -37,17 +37,20 @@ header .logo {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
 }
 
-header .navbar ul li button {
+header .navbar ul li :link {
   font-size: 2rem;
   padding: 0 1.5rem;
   color: #483c2e;
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
-header .navbar ul li button:hover {
+header .navbar ul li :link:hover {
   color: #ffff;
+  text-decoration: none;
 }

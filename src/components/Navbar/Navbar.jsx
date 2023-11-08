@@ -1,21 +1,31 @@
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <header>
-      <button class="logo"
-        ><img src="http://cadep.ar/img/cadep_logo.png" alt="" width="85px" height="100px"
-      /></button>
-      <h1 class="logo">CADEP - TIENDA OFICIAL</h1>
-      <nav class="navbar">
+      <button className="logo">
+        <img src="http://cadep.ar/img/cadep_logo.png" alt="" width="85px" height="100px" />
+      </button>
+      <h1 className="logo">CADEP - TIENDA OFICIAL</h1>
+      <nav className="navbar">
         <ul>
-            <li><button>Camisetas</button></li>
-            <li><button>Shorts</button></li>
-            <li><button>Medias</button></li>
-            <li><button>Botines</button></li>
-            <li><button>Accesorio</button></li>
-            <li><CartWidget/></li>
+          <li>
+            <Link to={'category/Hombre'}>Hombre</Link>
+          </li>
+          <li>
+            <Link to={'category/Mujer'}>Mujer</Link>
+          </li>
+          <li>
+            <Link to={'category/Electronico'}>Electronico</Link>
+          </li>
+          <li>
+            <Link to={'category/Accesorio'}>Accesorio</Link>
+          </li>
+          <li>
+            <CartWidget />
+          </li>
         </ul>
       </nav>
     </header>

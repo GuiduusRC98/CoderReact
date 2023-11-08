@@ -1,0 +1,15 @@
+.item-list-title{
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 120px;
+  text-align: center;
+}
+.item-list-container {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "CAMISETA NEGRA ARBITRO ATHIX OFICIAL AFA 2022/23",
+    "price": 15490,
+    "description": "Camiseta de Arbitro",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/419/855/products/athix-celeste-indu1-a1517af40a048358a216633833408583-480-0.jpg",
+    "talles": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 2,
+    "title": "MEDIAS ATHIX OFICIAL",
+    "price": 3490,
+    "description": "Medias de Arbitro",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/419/855/products/medias-negras-athix1-5a533c243a851eac8016635264960961-320-0.jpg",
+    "talles": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 3,
+    "title": "SHORT ATHIX OFICIAL AFA 2022/23",
+    "price": 12490,
+    "description": "Short de Arbitro",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/419/855/products/short-athix-11-178f425e55342724c416635261647716-320-0.jpg",
+    "talles": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 4,
+    "title": "SILBATO FOX",
+    "price": 5000,
+    "description": "Silbato de Arbitro",
+    "image": "https://newsport.vtexassets.com/arquivos/ids/16220611/24-b.jpg?v=638219136174270000",
+    "talles": []
+  }
+]

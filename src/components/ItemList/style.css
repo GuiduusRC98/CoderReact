@@ -1,9 +1,11 @@
 .item-list-container {
+    column-count: 2; 
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     margin: 20px;
-  }
+}
+
   
   .item-list-container h2 {
     color: #333;
