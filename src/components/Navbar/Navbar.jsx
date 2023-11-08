@@ -12,16 +12,16 @@ function Navbar() {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to={'category/Hombre'}>Hombre</Link>
+            <Link to='/category/Mujer'>Mujer</Link>
           </li>
           <li>
-            <Link to={'category/Mujer'}>Mujer</Link>
+            <Link to="/category/men's clothing">Hombre</Link>
           </li>
           <li>
-            <Link to={'category/Electronico'}>Electronico</Link>
+            <Link to='/category/Electronico'>Electrónico</Link>
           </li>
           <li>
-            <Link to={'category/Accesorio'}>Accesorio</Link>
+            <Link to='/category/Accesorio'>Accesorio</Link>
           </li>
           <li>
             <CartWidget />
