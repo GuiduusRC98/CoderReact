@@ -54,3 +54,7 @@ header .navbar ul li :link:hover {
   color: #ffff;
   text-decoration: none;
 }
+
+.active{
+  color: red;
+}
