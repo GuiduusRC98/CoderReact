@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/pages/ItemDetailContainer/ItemDetailContainer';
-
+import Carts from './components/pages/Cart/Cart.jsx'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Route path='/' element={<ItemListContainer/>} />
         <Route path='/category/:id' element={<ItemListContainer/>} />
         <Route path='/item/:id' element={<ItemDetailContainer/>} />
+        <Route path='/cart' element={<Carts/>} />
       </Routes>
       
       </BrowserRouter>

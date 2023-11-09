@@ -22,7 +22,6 @@ const ItemListContainer = () => {
     <h2 className="item-list-title">Productos</h2>
     
     <div className="item-list-container">
-      <ItemCount />
       <ItemList listaproducto={listaproducto} />
     </div>
     </div>
