@@ -1,14 +1,20 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const { setTheme} = useContext(ThemeContext);
   return (
     <header>
       <button className="logo">
         <img src="http://cadep.ar/img/cadep_logo.png" alt="" width="85px" height="100px" />
       </button>
+      <Link to={'/'}>
       <h1 className="logo">CADEP - TIENDA OFICIAL</h1>
+      </Link>
+      <button onClick={() => setTheme((currentValue) => currentValue === 'light' ? 'dark' : 'light')}>Modo Oscuro/Claro</button>
       <nav className="navbar">
         <ul>
           <li>
@@ -24,7 +30,7 @@ const Navbar = () => {
             <NavLink activeclassname="active" to='/category/jewelery'>Accesorio</NavLink>
           </li>
           <li>
-            <CartWidget />
+            <CartWidget/>
           </li>
         </ul>
       </nav>
