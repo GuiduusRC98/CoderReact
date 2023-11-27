@@ -21,6 +21,7 @@ header {
   left: 0;
   right: 0;
   background: #eeb469;
+  text-decoration: none;
   padding: 0.5rem 9%;
   display: flex;
   align-items: center;
@@ -33,6 +34,14 @@ header .logo {
   background-color: transparent;
 }
 
+.logoName {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -40,7 +49,7 @@ header .logo {
   text-decoration: none;
 }
 
-header .navbar ul li :link {
+header .navbar ul li .linkCadep {
   font-size: 2rem;
   padding: 0 1.5rem;
   color: #483c2e;
@@ -50,7 +59,7 @@ header .navbar ul li :link {
   text-decoration: none;
 }
 
-header .navbar ul li :link:hover {
+header .navbar ul li .linkCadep:hover {
   color: #ffff;
   text-decoration: none;
 }
