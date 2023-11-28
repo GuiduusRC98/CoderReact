@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
-import { products } from '../mock/products';
-import ItemDetail from './ItemDetail';
+import { products } from '../../products/products';
+import ItemDetail from '../Item/ItemDetail';
 import {useParams} from 'react-router-dom'
 
 

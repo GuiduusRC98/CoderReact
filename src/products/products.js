@@ -1,7 +1,3 @@
-import remeras from '../assets/images/remeras.jpg'
-import pantalones from '../assets/images/pantalones.jpg'
-import camisas from '../assets/images/camisas.jpg'
-
 
 const products = [
     {id: 1,
