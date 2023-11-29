@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
-import { products } from '../../products/products';
 import ItemDetail from '../Item/ItemDetail';
 import {useParams} from 'react-router-dom'
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../config/ConfigFirebase';
 
 
 const ItemDetailContainer = () => {
     const [details, setDetails] = useState()
     const {id} = useParams()
-
-    const getProducts = new Promise ((resolve) => {
-        setTimeout(() => {
-            resolve(products.filter(prod => prod.id === Number(id)))
-        }, 2000);
-    });
     
     useEffect(() => {
-        getProducts
-        .then((data) => {
-            setDetails(data);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+        const products = doc(db, "products", `${id}`);
+        getDoc(products).then((snapshot) => {
+          if (snapshot.exists()) {
+            setDetails({
+                id: snapshot.id,
+                ...snapshot.data(),
+              })
+        }
+        });
     }, [])
 
   return (
@@ -31,7 +28,7 @@ const ItemDetailContainer = () => {
         <Spinner animation="border" role="status">
         <span className="visually-hidden">Loading...</span>
       </Spinner>
-        : <ItemDetail details={details[0]}/>
+        : <ItemDetail details={details}/>
         }
     </div>
   )

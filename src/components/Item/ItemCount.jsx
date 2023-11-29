@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
     const [count, setCount] = useState(initial);
 
     const restar = () => {
-        /* if (count > initial) {
-            setCount(count - 1);
-        } */
 
         count > initial && setCount(count - 1);
     };
@@ -17,9 +15,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         }
     };
 
-    /*     const agregar = () =>{
-        onAdd(count)
-    } */
 
     return (
         <div className="counter">
@@ -30,9 +25,9 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             </div>
 
             <div>
-                <button className="add-btn" onClick={() => onAdd(count)}>
-                    Add to cart
-                </button>
+                <Button variant="primary" className="add-btn" onClick={() => onAdd(count)}>
+                    Añadir al carrito
+                </Button>
             </div>
         </div>
     );

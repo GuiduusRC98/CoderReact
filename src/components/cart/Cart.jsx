@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/cartContext'
+import { Button } from 'react-bootstrap'
 
 const Cart = () => {
 
@@ -35,13 +36,13 @@ const {cart, deleteAll, deleteOne, suma} = useContext(CartContext)
                         <h2>$ {prod.precio}</h2>
                     </div>
                     <div className='col-2'>
-                        <button onClick={() => deleteOne(prod.id)}>Eliminar</button>
+                      <Button variant="danger" onClick={() => deleteOne(prod.id)}>Eliminar</Button>
                     </div>
                 </div>
             ))}
             <div className='d-flex row m-5'>
               <div className='col-3'>
-            <button onClick={deleteAll}>Eliminar todos los productos</button>
+            <Button variant="danger" onClick={deleteAll}>Eliminar todos los productos</Button>
               </div>
               <div className='col-3'>
             <h3>Total: $ {suma}</h3>
